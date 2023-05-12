@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/output.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body class="box-border w-full lg:h-screen bg-indigo-950 bg-cover bg-top py-9 px-2 font-Rubik">
+  <main class="w-full  py-14 lg:h-screen lg:flex items-center">
+
+    <section class="w-full sm:grid-rows-4 grid md:grid-rows-3 lg:grid-rows-2 grid-auto-fit-[240px] gap-y-6 px-4 gap-x-4  md:place-content-center lg:place-items-center  lg:max-w-[600px] lg:max-h-[400px] sm:grid-flow-col mx-auto">
+
+      <article class="text-white bg-blue-950  w-72 rounded-lg  mx-auto   md:rounded-xl  row-span-2 md:h-[400px] md:w-60  lg:mr-0 ">
+
+        <div class="bg-indigo-600 rounded-xl p-4 py-6 flex sm:flex-col sm:pl-8 sm:pr-10 justify-center items-center gap-4 md:gap-0  sm:justify-evenly sm:h-[65%] sm:items-start">
+          <img src="./images/image-jeremy.png" alt="" class="w-16 md:w-20 rounded-full border-2 border-white">
+          <div class="flex flex-col justify-center">
+            <span class="opacity-50 text-sm md:text-base">Report for</span>
+            <span class="text-xl md:text-2xl">Jeremy Robson</span>
+          </div>
+        </div>
+
+        <div class="flex justify-around items-center p-4 sm:flex-col sm:items-start md:pl-10 sm:h-[35%] md:rounded-xl">
+          <button class="text-white active:opacity-100 opacity-50 hover:opacity-100  md:text-xl" id="btn-daily">Daily</button>
+          <button class="text-white active:opacity-100 opacity-50 hover:opacity-100 md:text-xl" id="btn-weekly">Weekly</button>
+          <button class="text-white active:opacity-100 opacity-50 hover:opacity-100 md:text-xl md:rounded-xl" id="btn-monthly">Monthly</button>
+        </div>
+
+      </article>
+
+      <article class="w-72  bg-orange-400 rounded-xl pt-10 bg-[url('../images/icon-work.svg')] bg-no-repeat bg-right-top mx-auto md:w-56 cursor-pointer ">
+        <div class="w-full bg-blue-950  rounded-ss-xl rounded-se-xl rounded-xl h-full flex flex-wrap px-6 py-6 text-white md:py-4 md:px-8 hover:bg-blue-95005">
+          <div class="w-full flex gap-1 justify-between items-center">
+            <span class="text-lg card-title" ></span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            
+          </div>
+
+          <div class="flex w-full justify-between items-center  md:flex-col md:items-start md:mt-6">
+            <span class="text-3xl  md:mb-2  current-time">32 Hrs</span>
+            <span class="opacity-50 ">
+              <span class="previous-frame">Last week - </span>
+              <span class="previous-time">36 hrs</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="w-72  bg-blue-400 rounded-xl pt-10 bg-[url('../images/icon-play.svg')] bg-no-repeat bg-right-top mx-auto md:w-56 cursor-pointer">
+        <div class="w-full bg-blue-950  rounded-ss-xl rounded-se-xl rounded-xl h-full flex flex-wrap px-6 py-6 text-white md:py-4 md:px-8 hover:bg-blue-95005">
+          <div class="w-full flex gap-1 justify-between items-center">
+            <span class="text-lg card-title" ></span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            
+          </div>
+
+          <div class="flex w-full justify-between items-center md:flex-col md:items-start md:mt-6">
+            <span class="text-3xl  md:mb-2 current-time">32 Hrs</span>
+            <span class="opacity-50 ">
+              <span class="previous-frame">Last week - </span>
+              <span class="previous-time">36 hrs</span>
+            </span>
+          </div>
+        </div>
+      </article>
+      
+      <article class="w-72  bg-rose-400 rounded-xl pt-10 bg-[url('../images/icon-study.svg')] bg-no-repeat bg-right-top mx-auto md:w-56 cursor-pointer">
+        <div class="w-full bg-blue-950  rounded-ss-xl rounded-se-xl rounded-xl h-full flex flex-wrap px-6 py-6 text-white md:py-4 md:px-8 hover:bg-blue-95005">
+          <div class="w-full flex gap-1 justify-between items-center">
+            <span class="text-lg card-title" ></span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            
+          </div>
+
+          <div class="flex w-full justify-between items-center md:flex-col md:items-start md:mt-6">
+            <span class="text-3xl  md:mb-2 current-time">32 Hrs</span>
+            <span class="opacity-50 ">
+              <span class="previous-frame">Last week - </span>
+              <span class="previous-time">36 hrs</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="w-72  bg-green-400 rounded-xl pt-10 bg-[url('../images/icon-exercise.svg')] bg-no-repeat bg-right-top mx-auto md:w-56 cursor-pointer">
+        <div class="w-full bg-blue-950  rounded-ss-xl rounded-se-xl rounded-xl h-full flex flex-wrap px-6 py-6 text-white md:py-4 md:px-8 hover:bg-blue-95005">
+          <div class="w-full flex gap-1 justify-between items-center">
+            <span class="text-lg card-title" ></span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            
+          </div>
+
+          <div class="flex w-full justify-between items-center md:flex-col md:items-start md:mt-6">
+            <span class="text-3xl  md:mb-2 current-time">32 Hrs</span>
+            <span class="opacity-50 ">
+              <span class="previous-frame">Last week - </span>
+              <span class="previous-time">36 hrs</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="w-72  bg-purple-600 rounded-xl pt-10 bg-[url('../images/icon-social.svg')] bg-no-repeat bg-right-top mx-auto md:w-56 cursor-pointer">
+        <div class="w-full bg-blue-950  rounded-ss-xl rounded-se-xl rounded-xl h-full flex flex-wrap px-6 py-6 text-white md:py-4 md:px-8 hover:bg-blue-95005">
+          <div class="w-full flex gap-1 justify-between items-center">
+            <span class="text-lg card-title" ></span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            
+          </div>
+
+          <div class="flex w-full justify-between items-center md:flex-col md:items-start md:mt-6">
+            <span class="text-3xl  md:mb-2 current-time">32 Hrs</span>
+            <span class="opacity-50 ">
+              <span class="previous-frame">Last week - </span>
+              <span class="previous-time">36 hrs</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="w-72  bg-yellow-300 rounded-xl pt-10 bg-[url('../images/icon-self-care.svg')] bg-no-repeat bg-right-top mx-auto md:w-56 cursor-pointer">
+        <div class="w-full bg-blue-950  rounded-ss-xl rounded-se-xl rounded-xl h-full flex flex-wrap px-6 py-6 text-white md:py-4 md:px-8 hover:bg-blue-95005">
+          <div class="w-full flex gap-1 justify-between items-center">
+            <span class="text-lg card-title" ></span>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            
+          </div>
+
+          <div class="flex w-full justify-between items-center md:flex-col md:items-start md:mt-6">
+            <span class="text-3xl  md:mb-2 current-time">32 Hrs</span>
+            <span class="opacity-50 ">
+              <span class="previous-frame">Last week - </span>
+              <span class="previous-time">36 hrs</span>
+            </span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <script src="../index.js"></script>
+</body>
+</html>
